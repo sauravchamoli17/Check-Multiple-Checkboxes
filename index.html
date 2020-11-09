@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hold Shift For Multiple Checkboxes</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        input:checked + p {
+            background: #F9F9F9;
+            text-decoration: line-through;
+        }
+    </style>
+</head>
+<body class="bg-blue-500">
+    <h1 class="text-white text-4xl text-center font-semibold p-2">Hold Shift to Check Multiple Checkboxes</h1>
+    <div class="flex flex-col mt-8 w-4/12 mx-auto bg-white rounded-sm shadow-xl">
+        
+        <div class="flex items-center border-b-2 rounded">
+          <input type="checkbox" class="mx-6 w-4 h-4">
+          <p class="text-xl border-l-2 p-4">This is an inbox layout.</p>
+        </div>
+
+        <div class="flex items-center border-b-2 rounded">
+          <input type="checkbox" class="mx-6 w-4 h-4">
+          <p class="text-xl border-l-2 p-4">Check one item</p>
+        </div>
+
+        <div class="flex items-center border-b-2 rounded">
+          <input type="checkbox" class="mx-6 w-4 h-4">
+          <p class="text-xl border-l-2 p-4">Hold down your Shift key</p>
+        </div>
+
+        <div class="flex items-center border-b-2 rounded">
+          <input type="checkbox" class="mx-6 w-4 h-4">
+          <p class="text-xl border-l-2 p-4">Check a lower item</p>
+        </div>
+        
+        <div class="flex items-center border-b-2 rounded">
+          <input type="checkbox" class="mx-6 w-4 h-4">
+          <p class="text-xl border-l-2 p-4">Check a upper item</p>
+        </div>
+
+        <div class="flex items-center border-b-2 rounded">
+          <input type="checkbox" class="mx-6 w-4 h-4">
+          <p class="text-xl border-l-2 p-4">Try to do it without any libraries</p>
+        </div>
+
+        <div class="flex items-center border-b-2 rounded">
+          <input type="checkbox" class="mx-6 w-4 h-4">
+          <p class="text-xl border-l-2 p-4">Just regular JavaScript</p>
+        </div>
+
+        <div class="flex items-center border-b-2 rounded">
+          <input type="checkbox" class="mx-6 w-4 h-4">
+          <p class="text-xl border-l-2 p-4">Don't forget to tweet your result!</p>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
